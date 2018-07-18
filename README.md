@@ -12,7 +12,7 @@ Implementation
 3. Calculate SVD by your own. In this step, I have used this approach:
 	-Send the transpose of matrices because of their sizes, since in Amxn matrix, m should
 	be smaller or equal than n.
-	The equation of A = U*S*Transpose(V) becomes A*Transpose(A) = V*S*Transpose(V)
+	The equation of A = U**S**Transpose(V) becomes A*Transpose(A) = V*S*Transpose(V)
 	Transpose(A)*A = V*S*Transpose(U) U*S*Transpose(V)=V*S^2*Transpose(V) 
 	A*Transpose(A) = U*S*Transpose(V) V*S*Transpose(U)=U*S^2*Transpose(U)
 	-Calculate eigenvectors and eigenvalues of these two matrices. Sort the eigenvectors
